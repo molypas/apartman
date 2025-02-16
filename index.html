@@ -17,9 +17,7 @@
     <button id="language-toggle" onclick="toggleLanguage()" data-lang="hr">Prebaci na Engleski</button>
   </div>
   <!-- Logo u gornjem desnom kutu -->
-  <div class="logo-container">
-    <img src="Slike/logoGC-transparetna.png" alt="Global Cherry Apartman Logo" class="logo">
-  </div>
+
 </header>
 
 <section class="gallery">
@@ -94,7 +92,9 @@
 
 <section class="contact">
   <h2 data-lang="hr" data-key="contact">Kontaktirajte nas</h2>
-  <form action="mailto:info@apartman.com" method="post" enctype="text/plain" data-netlify="true">
+
+  <form name="contact" method="POST" data-netlify="true">
+
     <label for="name" data-lang="hr" data-key="nameLabel">Ime i prezime:</label>
     <input type="text" id="name" name="name">
 
@@ -114,8 +114,11 @@
     <input type="number" id="guests" name="guests" min="1">
 
     <button type="submit" id="submit-btn" data-lang="hr" data-key="submitBtn">Pošaljite podatke</button>
+
   </form>
+
 </section>
+
 
 
 <footer>
